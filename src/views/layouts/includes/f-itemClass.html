@@ -1,0 +1,34 @@
+<div class="f-item-group o-card" id="{{@key}}">
+
+{{#if items}}
+	<div class="f-item-heading-group">
+		<h2 class="o-card-title" data-f-toggle="labels">
+			.{{namespace}}{{camelify name}}
+		</h2>
+	</div>
+	{{#each items}}
+		<div class="f-item-group" id="{{@key}}">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading o-card-title">
+					.{{namespace}}{{camelify name}}
+				</h3>
+				{{> f-item-controls}}
+			</div>
+			<div class="o-card-body">
+				{{> f-item-content-code-visible this}}
+			</div>
+		</div>
+	{{/each}}
+{{else}}
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading o-card-title">
+			.{{namespace}}{{camelify name}}
+		</h2>
+		{{> f-item-controls-code-visible }}
+	</div>
+	<div class="o-card-body">
+		{{> f-item-content-code-visible this}}
+	</div>
+{{/if}}
+
+</div>

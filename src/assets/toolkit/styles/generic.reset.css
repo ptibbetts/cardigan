@@ -1,0 +1,8 @@
+/*
+ * Give a help cursor to elements that reveal their title on :hover
+*/
+
+abr[title],
+dfn[title] {
+  cursor: help;
+}
