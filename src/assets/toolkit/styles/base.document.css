@@ -1,0 +1,11 @@
+@import "./variables";
+@import "./base.variables";
+
+html {
+  color: $base-text-color;
+  line-height: 1.4;
+}
+
+body {
+  background: var(--base-background-color);
+}

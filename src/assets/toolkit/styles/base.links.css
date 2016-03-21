@@ -1,0 +1,4 @@
+a {
+  color: map(link-color);
+  text-decoration: map(link-decoration);
+}

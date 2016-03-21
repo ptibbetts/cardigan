@@ -1,0 +1,57 @@
+<!-- fabricator menu -->
+<div class="f-menu">
+
+	{{> f-controls}}
+
+	<ul>
+
+		<li>
+			<a href="overview.html" class="f-menu__heading">Overview</a>
+			<ul>
+				<li>
+					<a href="overview.html#introduction">Introduction</a>
+				</li>
+				<li>
+					<a href="overview.html#getting-started">Getting started</a>
+				</li>
+				<li>
+					<a href="overview.html#naming-conventions">Naming Conventions</a>
+				</li>
+				<li>
+					<a href="overview.html#layout">Layout</a>
+				</li>
+			</ul>
+		</li>
+
+
+		{{#each materials}}
+		<li>
+			<a href="{{@key}}.html" class="f-menu__heading">{{name}}</a>
+			<ul>
+				{{#each items}}
+				<li>
+					<a href="{{@../key}}.html#{{@key}}">{{name}}</a>
+				</li>
+				{{/each}}
+			</ul>
+		</li>
+		{{/each}}
+
+		<!-- {{#each views}}
+		<li>
+			<a href="{{@key}}.html" class="f-menu__heading">{{name}}</a>
+			<ul>
+				{{#each items}}
+				<li>
+					<a href="{{@../key}}/{{@key}}.html" target="_blank">{{name}}</a>
+				</li>
+				{{/each}}
+			</ul>
+		</li>
+		{{/each}} -->
+
+	</ul>
+
+
+</div>
+<!-- /fabricator menu -->

@@ -1,0 +1,6 @@
+define-color-blue: &color_blue "#47b8e0"
+
+link-color: *color_blue
+link-decoration: "none"
+
+base-background-color: "#e1eef6"

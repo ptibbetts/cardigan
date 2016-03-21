@@ -1,0 +1,44 @@
+h2 {
+  background: #ff7473;
+}
+
+h3 {
+  background: #ffc952;
+}
+
+h4 {
+  background: #47b8e0;
+}
+
+h2,
+h3,
+h4 {
+  color: #fff;
+  margin: 3rem 0 2rem;
+  padding: 2rem;
+}
+
+p {
+  color: #34314c;
+}
+
+/*
+* http://www.lolcolors.com/palettes/56/like
+*/
+
+pre {
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  margin: 1em 0 2em 0;
+  padding: 1.2em;
+
+  code {
+    background: none;
+  }
+}
+
+code {
+  background-color: rgba(0, 0, 0, 0.04);
+  font-size: 85%;
+  padding: 0.5em;
+}

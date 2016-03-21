@@ -1,0 +1,17 @@
+.o-card {
+  background: #fff;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+
+  &-title {
+    border-top-left-radius: 3px;
+    border-top-right-radius: @border-top-left-radius;
+    margin: 0;
+    padding: 2rem;
+  }
+
+  &-body {
+    padding: 1rem;
+  }
+
+}

@@ -1,0 +1,5 @@
+@import "./variables";
+
+.u-roundedEdges {
+  border-radius: $rounded-edges;
+}

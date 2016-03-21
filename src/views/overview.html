@@ -1,0 +1,25 @@
+---
+fabricator: true
+---
+
+<h1 data-f-toggle="labels">Overview</h1>
+
+{{#each docs}}
+
+	<div class="f-item-group">
+
+		<div class="o-card">
+
+			<h2 id="{{@key}}" class="o-card-title">
+				<a href="#{{@key}}" class="u-linkStrip">{{name}}</a>
+			</h2>
+
+			<div class="o-card-body">
+				{{{content}}}
+			</div>
+
+		</div>
+
+	</div>
+
+{{/each}}

@@ -7,7 +7,8 @@ module.exports = function(cardiganConfig) {
 
 	var config = {
 		entry: {
-			'scripts/index': cardiganConfig.src.scripts
+			'fabricator/scripts/fabricator': cardiganConfig.src.scripts.fabricator,
+			'toolkit/scripts/toolkit': cardiganConfig.src.scripts.toolkit
 		},
 		output: {
 			path: path.resolve(__dirname, cardiganConfig.dest, 'assets'),
@@ -18,7 +19,8 @@ module.exports = function(cardiganConfig) {
 				{
 					test: /\.js$/,
 					exclude: /(node_modules|prism\.js)/,
-					loaders: ['babel-loader']
+					loaders: ['babel'],
+					presets: ['es2015', 'stage-2']
 				}
 			]
 		},
