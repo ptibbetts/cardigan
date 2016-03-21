@@ -1,0 +1,42 @@
+{
+  "name": "cardigan",
+  "version": "0.1.0",
+  "description": "cardigan is how we do CSS at The Blue Cube",
+  "main": "index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cardigan",
+    "css",
+    "The",
+    "Blue",
+    "Cube",
+    "framework",
+    "toolkit"
+  ],
+  "author": "Paul Tibbetts <email@paultibbetts.uk>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.7.2",
+    "babel-loader": "^6.2.4",
+    "browser-sync": "^2.11.1",
+    "css-mqpacker": "^4.0.1",
+    "cssnano": "^3.5.2",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-csso": "^1.1.0",
+    "gulp-if": "^2.0.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "postcss-bem": "^0.4.1",
+    "postcss-easy-import": "^1.0.1",
+    "postcss-reporter": "^1.3.3",
+    "precss": "^1.4.0",
+    "run-sequence": "^1.1.5",
+    "webpack": "^1.12.14"
+  }
+}
